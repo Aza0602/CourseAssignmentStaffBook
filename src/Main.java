@@ -18,7 +18,18 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        dataEmployee();
 
+        printListOfAllEmployees();
+        printseparator();
+        System.out.println("\nCуммa затрат на зарплаты в месяц составило: " + printSumOfSalary() + " рублей.");
+        printseparator();
+        System.out.println("\nCотрудник с минимальной зарплатой: " + printMinSalary() + ".");
+        printseparator();
+        System.out.println("\nCотрудник с максимальной зарплатой: " + printMaxSalary() + ".");
+        printseparator();
+        System.out.println("\nСреднее значение зарплат составила " + printAverageSalary() + " рублей.");
+        printAllNamesEmployees();
     }
 
     private static void printseparator() {
